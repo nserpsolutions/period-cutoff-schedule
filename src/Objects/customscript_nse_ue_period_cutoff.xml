@@ -1,0 +1,24 @@
+<usereventscript scriptid="customscript_nse_ue_period_cutoff">
+  <description>Controls and validates the data entered in the Period Cutoff Schedule (customrecord_nse_period_cutoff_schedule) record.</description>
+  <isinactive>F</isinactive>
+  <name>NSE UE Period Cutoff</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/Period Cutoff Schedule/nse_sd_ue_period_cutoff.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_nse_ue_period_cutoff">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>[scriptid=customrecord_nse_period_cutoff_schedule]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

@@ -1,0 +1,28 @@
+<scheduledscript scriptid="customscript_nse_sd_sc_create_cutoff_rec">
+  <description>Automatically creates Period Cutoff Schedule records for periods that are open.</description>
+  <isinactive>F</isinactive>
+  <name>NSE SC Create Cutoff Records</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/Period Cutoff Schedule/nse_sd_sc_period_cutoff_populate.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_nse_sd_sc_create_cutoff_rec">
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>SCHEDULED</status>
+      <title>NSE SC Create Cutoff Records</title>
+      <recurrence>
+        <monthlydayofweek>
+          <dayofweek>WEDNESDAY</dayofweek>
+          <enddate></enddate>
+          <everyxmonths>1</everyxmonths>
+          <orderofweek>FIRST</orderofweek>
+          <repeat></repeat>
+          <startdate>2019-03-06</startdate>
+          <starttime>02:00:00Z</starttime>
+        </monthlydayofweek>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
