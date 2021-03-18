@@ -118,6 +118,8 @@ function (search, error, format) {
    */
   function getNextPeriod(afterDate) {
     var nextPeriodId = 0;
+    if (afterDate === null || afterDate === undefined)
+      return nextPeriodId;
     var periodStartDate = format.format({
       value: new Date(afterDate.getTime()+86400000),
       type: format.Type.DATE
